@@ -1,12 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
+  selector: 'app-navigator',
+  imports: [],
   templateUrl: './navigator.html',
-  styleUrl: './navigator.css'
+  styleUrl: './navigator.css',
 })
-export class App {
-  protected readonly title = signal('learning-angular');
+export class Navigator {
+
 }

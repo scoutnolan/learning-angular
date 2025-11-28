@@ -1,12 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
+  selector: 'app-divider',
+  imports: [],
   templateUrl: './divider.html',
-  styleUrl: './divider.css'
+  styleUrl: './divider.css',
 })
-export class App {
-  protected readonly title = signal('learning-angular');
+export class Divider {
+
 }
