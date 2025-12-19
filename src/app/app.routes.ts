@@ -1,10 +1,15 @@
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home';
 import { FilmComponent } from './pages/film';
-import { AppComponent } from './app.component';
 
-export const routes: Routes = [
-    { path: '', component: AppComponent },
-    { path: './pages/film/', component: FilmComponent }
+const routes: Routes = [
+  { path: '', component: HomeComponent },         // Default route for the homepage
+  { path: 'film', component: FilmComponent }, // Route for the about page
 ];
 
-export const appRoutingModule = RouterModule.forRoot(routes);
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
