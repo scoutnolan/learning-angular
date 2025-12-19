@@ -1,6 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from "@angular/router";
+import { FilmComponent } from './film';
 
-@Component({ selector: 'app', templateUrl: './app.html', imports: [RouterOutlet] })
-
-export class AppComponent {}
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [
+    FilmComponent
+],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
+})
+export class AppComponent {
+}

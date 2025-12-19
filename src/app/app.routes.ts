@@ -1,10 +1,10 @@
 import { RouterModule, Routes } from '@angular/router';
-import { Film } from './film/film';
+import { FilmComponent } from './film';
 import { AppComponent } from './app.component';
 
 export const routes: Routes = [
     { path: '', component: AppComponent },
-    { path: 'film', component: Film }
+    { path: './film/', component: FilmComponent }
 ];
 
 export const appRoutingModule = RouterModule.forRoot(routes);
