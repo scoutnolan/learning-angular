@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { FilmComponent } from './pages/film';
+import { HomeComponent } from './pages/home/home';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    FilmComponent
+    FilmComponent,
+    HomeComponent
 ],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
 }
